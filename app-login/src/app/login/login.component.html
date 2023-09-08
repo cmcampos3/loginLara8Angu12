@@ -1,0 +1,13 @@
+<form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="email">Correo Electrónico o Usuario:</label>
+      <input type="text" id="email" [(ngModel)]="formData.emailOrUsername" name="emailOrUsername" required>
+    </div>
+    <div>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" [(ngModel)]="formData.password" name="password" required>
+    </div>
+    <button type="submit">Iniciar Sesión</button>
+    <a routerLink="/registro">Registrarse</a>
+  </form>
+  
